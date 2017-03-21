@@ -1,0 +1,8 @@
+<h2><%= @message.title %></h2>
+<p><%= @message.description%></p>
+
+<!--created at timestamp -->
+
+<%= link_to 'Edit Message',edit_message_path(@message)%>
+<%= link_to 'Back',root_path%>
+<%= link_to "Delete", message_path(@message), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
